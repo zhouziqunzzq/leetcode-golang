@@ -15,7 +15,7 @@ func (this *MinStack) Push(x int) {
 	if len(this.minStack) == 0 {
 		this.minStack = append(this.minStack, x)
 	} else {
-		this.minStack = append(this.minStack, min(x, this.minStack[len(this.minStack)-1]))
+		this.minStack = append(this.minStack, minInt(x, this.minStack[len(this.minStack)-1]))
 	}
 }
 
@@ -32,7 +32,7 @@ func (this *MinStack) GetMin() int {
 	return this.minStack[len(this.minStack)-1]
 }
 
-func min(x, y int) int {
+func minInt(x, y int) int {
 	if x < y {
 		return x
 	}

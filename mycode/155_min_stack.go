@@ -6,9 +6,9 @@ type MinStack struct {
 }
 
 /** initialize your data structure here. */
-func Constructor() MinStack {
-	return MinStack{[]int{}, []int{}}
-}
+//func Constructor() MinStack {
+//	return MinStack{[]int{}, []int{}}
+//}
 
 func (this *MinStack) Push(x int) {
 	this.stack = append(this.stack, x)

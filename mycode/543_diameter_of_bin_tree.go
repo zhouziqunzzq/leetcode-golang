@@ -15,12 +15,12 @@ package mycode
 //	Right *TreeNode
 //}
 
-func maxInt(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
+//func maxInt(x, y int) int {
+//	if x > y {
+//		return x
+//	}
+//	return y
+//}
 
 // return: (maxDepth, maxDiameter)
 func diameterOfBinaryTreeHelper(node *TreeNode) (int, int) {

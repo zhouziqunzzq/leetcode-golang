@@ -13,7 +13,7 @@ type LRUCache struct {
 	capacity int
 }
 
-func Constructor(capacity int) LRUCache {
+func ConstructorLRUCache(capacity int) LRUCache {
 	return LRUCache{
 		make(map[int]LRUCacheEntry),
 		list.New(),

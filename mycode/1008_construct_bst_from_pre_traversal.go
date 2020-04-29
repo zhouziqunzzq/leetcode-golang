@@ -9,11 +9,11 @@ package mycode
  * }
  */
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+//type TreeNode struct {
+//	Val   int
+//	Left  *TreeNode
+//	Right *TreeNode
+//}
 
 func bstFromPreorder(preorder []int) *TreeNode {
 	root := &TreeNode{preorder[0], nil, nil}

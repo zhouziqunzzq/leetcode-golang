@@ -1,11 +1,11 @@
 package mycode
 
-func maxInt(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
+//func maxInt(x, y int) int {
+//	if x > y {
+//		return x
+//	}
+//	return y
+//}
 
 func longestCommonSubsequence(text1 string, text2 string) int {
 	var opt [1000][1000]int

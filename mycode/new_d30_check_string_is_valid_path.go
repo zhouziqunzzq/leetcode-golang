@@ -9,11 +9,11 @@ package mycode
  * }
  */
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+//type TreeNode struct {
+//	Val   int
+//	Left  *TreeNode
+//	Right *TreeNode
+//}
 
 func isValidSequenceDFS(node *TreeNode, arr []int, pos int) bool {
 	if pos >= len(arr) || node.Val != arr[pos] {

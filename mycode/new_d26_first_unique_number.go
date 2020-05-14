@@ -7,7 +7,7 @@ type FirstUnique struct {
 	elemMap    map[int]*list.Element
 }
 
-func Constructor(nums []int) FirstUnique {
+func FirstUniqueConstructor(nums []int) FirstUnique {
 	fu := FirstUnique{uniqueList: list.New(), elemMap: make(map[int]*list.Element)}
 
 	for _, v := range nums {

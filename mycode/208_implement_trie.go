@@ -10,7 +10,7 @@ type TrieNode struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() Trie {
+func TrieConstructor() Trie {
 	return Trie{
 		root: &TrieNode{},
 	}

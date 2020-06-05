@@ -8,7 +8,7 @@ type StockSpanner struct {
 	mStack []StockSpannerElem // monotonous stack
 }
 
-func Constructor() StockSpanner {
+func StockSpannerConstructor() StockSpanner {
 	return StockSpanner{
 		mStack: make([]StockSpannerElem, 0),
 	}

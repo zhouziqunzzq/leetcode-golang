@@ -10,7 +10,7 @@ type Solution struct {
 	sumW int
 }
 
-func Constructor(w []int) Solution {
+func Constructor528(w []int) Solution {
 	rand.Seed(time.Now().UnixNano())
 
 	s := Solution{

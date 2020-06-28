@@ -17,29 +17,6 @@ import "math"
 //	Right *TreeNode
 //}
 
-func maxInt(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}
-
-func maxInt3(x, y, z int) int {
-	if x > y {
-		if x > z {
-			return x
-		} else {
-			return z
-		}
-	} else {
-		if y > z {
-			return y
-		} else {
-			return z
-		}
-	}
-}
-
 func postTraversal(node *TreeNode) (maxInner, maxToRoot int) {
 	if node.Left == nil && node.Right == nil {
 		maxInner = node.Val

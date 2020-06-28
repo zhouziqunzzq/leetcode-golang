@@ -1,21 +1,5 @@
 package mycode
 
-func minInt3(x, y, z int) int {
-	if x < y {
-		if x < z {
-			return x
-		} else {
-			return z
-		}
-	} else {
-		if y < z {
-			return y
-		} else {
-			return z
-		}
-	}
-}
-
 func maximalSquare(matrix [][]byte) int {
 	if len(matrix) == 0 {
 		return 0

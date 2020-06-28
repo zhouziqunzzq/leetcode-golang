@@ -32,13 +32,6 @@ func (this *MinStack) GetMin() int {
 	return this.minStack[len(this.minStack)-1]
 }
 
-func minInt(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
-
 /**
  * Your MinStack object will be instantiated and called as such:
  * obj := Constructor();

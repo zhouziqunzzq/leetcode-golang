@@ -1,6 +1,6 @@
 package mycode
 
-func hIndex(citations []int) int {
+func hIndex2(citations []int) int {
 	N := len(citations)
 	l, r := 0, N
 	mid := 0

@@ -11,7 +11,7 @@ type RandomizedSet struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() RandomizedSet {
+func Constructor380() RandomizedSet {
 	rand.Seed(time.Now().UnixNano())
 	return RandomizedSet{
 		mSet:  make(map[int]int),

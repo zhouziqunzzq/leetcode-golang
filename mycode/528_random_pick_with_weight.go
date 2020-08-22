@@ -5,15 +5,15 @@ import (
 	"time"
 )
 
-type Solution struct {
+type Solution528 struct {
 	accW []int // accumulated weights
 	sumW int
 }
 
-func Constructor528(w []int) Solution {
+func Constructor528(w []int) Solution528 {
 	rand.Seed(time.Now().UnixNano())
 
-	s := Solution{
+	s := Solution528{
 		accW: make([]int, len(w)),
 	}
 	s.accW[0] = w[0]
@@ -26,7 +26,7 @@ func Constructor528(w []int) Solution {
 	return s
 }
 
-func (this *Solution) PickIndex() int {
+func (this *Solution528) PickIndex() int {
 	randAccW := rand.Intn(this.sumW) + 1 // [1, sumW]
 
 	// perform bin-search

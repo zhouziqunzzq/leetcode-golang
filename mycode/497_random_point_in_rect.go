@@ -8,7 +8,7 @@ type Solution struct {
 	rectEntries []int
 }
 
-func Constructor(rects [][]int) Solution {
+func Constructor497(rects [][]int) Solution {
 	s := Solution{areaSum: 0, rects: rects, rectEntries: make([]int, len(rects))}
 	for i, r := range rects {
 		s.areaSum += (r[2] - r[0] + 1) * (r[3] - r[1] + 1)

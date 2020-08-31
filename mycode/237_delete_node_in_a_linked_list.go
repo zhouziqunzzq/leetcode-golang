@@ -7,7 +7,7 @@ package mycode
  *     Next *ListNode
  * }
  */
-func deleteNode(node *ListNode) {
+func deleteNode237(node *ListNode) {
 	pp := node
 	pn := node.Next
 

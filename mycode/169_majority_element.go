@@ -1,6 +1,6 @@
 package mycode
 
-func majorityElement(nums []int) int {
+func majorityElement169(nums []int) int {
 	n := len(nums)
 	cntMap := make(map[int]int)
 

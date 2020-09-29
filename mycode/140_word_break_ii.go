@@ -2,7 +2,7 @@ package mycode
 
 import "strings"
 
-func wordBreak(s string, wordDict []string) []string {
+func wordBreak2(s string, wordDict []string) []string {
 	return wordBreakHelper(s, wordDict, make(map[string][]string))
 }
 

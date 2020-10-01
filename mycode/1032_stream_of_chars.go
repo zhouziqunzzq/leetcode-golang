@@ -7,7 +7,7 @@ type StreamChecker struct {
 	buf  strings.Builder
 }
 
-func Constructor(words []string) StreamChecker {
+func Constructor1032(words []string) StreamChecker {
 	sc := StreamChecker{root: &TrieNode{}}
 	for _, s := range words {
 		node := sc.root

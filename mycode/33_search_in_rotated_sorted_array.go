@@ -17,7 +17,7 @@ func binSearchHelper(nums []int, target, lo, hi int) int {
 	return -1
 }
 
-func search(nums []int, target int) int {
+func search33(nums []int, target int) int {
 	if len(nums) <= 2 {
 		for i, v := range nums {
 			if v == target {

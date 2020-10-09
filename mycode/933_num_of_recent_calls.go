@@ -6,7 +6,7 @@ type RecentCounter struct {
 	r    int
 }
 
-func Constructor() RecentCounter {
+func Constructor933() RecentCounter {
 	return RecentCounter{
 		l: 0,
 		r: 0,

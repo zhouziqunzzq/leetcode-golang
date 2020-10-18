@@ -2,7 +2,7 @@ package mycode
 
 import "math"
 
-func maxProfit(prices []int) int {
+func maxProfit1(prices []int) int {
 	minPrice := math.MaxInt32
 	maxProfit := 0
 

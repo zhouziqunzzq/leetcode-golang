@@ -10,21 +10,21 @@ package mycode
  * }
  */
 
-type Node struct {
+type Node430 struct {
 	Val   int
-	Prev  *Node
-	Next  *Node
-	Child *Node
+	Prev  *Node430
+	Next  *Node430
+	Child *Node430
 }
 
-func flatten(root *Node) *Node {
+func flatten(root *Node430) *Node430 {
 	if root != nil {
 		flattenSolveHelper(root)
 	}
 	return root
 }
 
-func flattenSolveHelper(p *Node) *Node {
+func flattenSolveHelper(p *Node430) *Node430 {
 	for {
 		if p.Child != nil {
 			childLast := flattenSolveHelper(p.Child)
@@ -49,7 +49,7 @@ func flattenSolveHelper(p *Node) *Node {
 	return p
 }
 
-func flattenConnectHelper(n1, n2 *Node) {
+func flattenConnectHelper(n1, n2 *Node430) {
 	if n1 != nil {
 		n1.Next = n2
 	}

@@ -5,7 +5,7 @@ package mycode
 //	Next *ListNode
 //}
 
-func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers2(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := &ListNode{0, nil}
 	p := head
 	carry := 0

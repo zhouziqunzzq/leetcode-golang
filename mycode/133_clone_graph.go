@@ -8,26 +8,26 @@ package mycode
  * }
  */
 
-type Node struct {
+type Node133 struct {
 	Val       int
-	Neighbors []*Node
+	Neighbors []*Node133
 }
 
-func cloneGraph(node *Node) *Node {
+func cloneGraph(node *Node133) *Node133 {
 	if node == nil {
 		return nil
 	}
 
-	nodes := make([]*Node, 110)
+	nodes := make([]*Node133, 110)
 	return cloneGraphHelper(node, nodes)
 }
 
-func cloneGraphHelper(node *Node, nodes []*Node) *Node {
+func cloneGraphHelper(node *Node133, nodes []*Node133) *Node133 {
 	id := node.Val
 	if nodes[id] == nil {
-		nodes[id] = &Node{
+		nodes[id] = &Node133{
 			Val:       id,
-			Neighbors: make([]*Node, len(node.Neighbors)),
+			Neighbors: make([]*Node133, len(node.Neighbors)),
 		}
 		for i, n := range node.Neighbors {
 			nodes[id].Neighbors[i] = cloneGraphHelper(n, nodes)

@@ -1,6 +1,6 @@
 package mycode
 
-func search(nums []int, target int) int {
+func search704(nums []int, target int) int {
 	l, r := 0, len(nums)-1
 	m := 0
 	for l <= r {

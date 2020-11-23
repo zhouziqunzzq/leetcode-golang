@@ -1,6 +1,6 @@
 package mycode
 
-func rob(nums []int) int {
+func rob2(nums []int) int {
 	n := len(nums)
 
 	if n == 1 {

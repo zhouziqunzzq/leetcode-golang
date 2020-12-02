@@ -2,14 +2,14 @@ package mycode
 
 import "math/rand"
 
-type Solution struct {
+type Solution497 struct {
 	areaSum     int
 	rects       [][]int
 	rectEntries []int
 }
 
-func Constructor497(rects [][]int) Solution {
-	s := Solution{areaSum: 0, rects: rects, rectEntries: make([]int, len(rects))}
+func Constructor497(rects [][]int) Solution497 {
+	s := Solution497{areaSum: 0, rects: rects, rectEntries: make([]int, len(rects))}
 	for i, r := range rects {
 		s.areaSum += (r[2] - r[0] + 1) * (r[3] - r[1] + 1)
 		s.rectEntries[i] = s.areaSum
@@ -17,7 +17,7 @@ func Constructor497(rects [][]int) Solution {
 	return s
 }
 
-func (this *Solution) Pick() []int {
+func (this *Solution497) Pick() []int {
 	// first pick a rect randomly with bin-search
 	randArea := rand.Int() % (this.areaSum + 1)
 	l, r := 0, len(this.rects)-1

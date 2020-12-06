@@ -19,7 +19,7 @@ type Node struct {
 
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/37472/A-simple-accepted-solution
 // Solution 1: iterative method with 2 pointers
-func connect(root *Node) *Node {
+func connect116(root *Node) *Node {
 	if root == nil {
 		return root
 	}

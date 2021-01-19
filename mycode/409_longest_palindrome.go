@@ -1,6 +1,6 @@
 package mycode
 
-func longestPalindrome(s string) int {
+func longestPalindrome409(s string) int {
 	var cnt [52]int
 
 	for _, c := range []rune(s) {

@@ -62,3 +62,10 @@ func gcd(a, b int) int {
 	}
 	return gcd(b, a%b)
 }
+
+func absInt(x int) int {
+	if x >= 0 {
+		return x
+	}
+	return -x
+}

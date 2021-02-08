@@ -14,7 +14,7 @@ type BSTIterator struct {
 	s []*TreeNode
 }
 
-func Constructor(root *TreeNode) BSTIterator {
+func Constructor173(root *TreeNode) BSTIterator {
 	it := BSTIterator{
 		s: make([]*TreeNode, 0),
 	}

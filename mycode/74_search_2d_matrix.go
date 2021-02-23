@@ -1,6 +1,6 @@
 package mycode
 
-func searchMatrix(matrix [][]int, target int) bool {
+func searchMatrix74(matrix [][]int, target int) bool {
 	m := len(matrix)
 	if m == 0 {
 		return false

@@ -90,3 +90,18 @@ func validateStackSequences(pushed []int, popped []int) bool {
 	}
 	return true
 }
+
+func validateStackSequencesBetter(pushed []int, popped []int) bool {
+	s := make([]int, 0)
+	popIdx := 0
+
+	for _, n := range pushed {
+		s = append(s, n)
+		for len(s) > 0 && popIdx < len(popped) && s[len(s)-1] == popped[popIdx] {
+			s = s[:len(s)-1]
+			popIdx++
+		}
+	}
+
+	return popIdx == len(popped)
+}

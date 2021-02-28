@@ -27,7 +27,7 @@ type PeekingIterator struct {
 	hasNextCache bool
 }
 
-func Constructor(iter *Iterator) *PeekingIterator {
+func Constructor284(iter *Iterator) *PeekingIterator {
 	pi := &PeekingIterator{
 		it:           iter,
 		hasNextCache: iter.hasNext(),

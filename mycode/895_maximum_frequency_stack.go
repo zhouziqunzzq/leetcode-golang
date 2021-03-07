@@ -7,7 +7,7 @@ type FreqStack struct {
 	maxFreq        int
 }
 
-func Constructor() FreqStack {
+func Constructor895() FreqStack {
 	return FreqStack{
 		elem2Freq:      make(map[int]int),
 		freq2ElemStack: make(map[int][]int),

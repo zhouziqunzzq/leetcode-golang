@@ -11,7 +11,7 @@ type MyHashMap struct {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyHashMap {
+func Constructor706() MyHashMap {
 	return MyHashMap{}
 }
 

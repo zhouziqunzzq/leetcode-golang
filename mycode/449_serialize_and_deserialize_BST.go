@@ -14,15 +14,15 @@ import "math"
  */
 
 // https://leetcode.com/problems/serialize-and-deserialize-bst/discuss/177617/the-General-Solution-for-Serialize-and-Deserialize-BST-and-Serialize-and-Deserialize-BT
-type Codec struct {
+type Codec449 struct {
 }
 
-func Constructor449() Codec {
-	return Codec{}
+func Constructor449() Codec449 {
+	return Codec449{}
 }
 
 // Serializes a tree to a single string.
-func (this *Codec) serialize(root *TreeNode) string {
+func (this *Codec449) serialize(root *TreeNode) string {
 	// serialize using pre-order traversal
 	sb := strings.Builder{}
 	this.serializeHelper(root, &sb)
@@ -34,7 +34,7 @@ func (this *Codec) serialize(root *TreeNode) string {
 	}
 }
 
-func (this *Codec) serializeHelper(node *TreeNode, sb *strings.Builder) {
+func (this *Codec449) serializeHelper(node *TreeNode, sb *strings.Builder) {
 	if node == nil {
 		return
 	}
@@ -45,7 +45,7 @@ func (this *Codec) serializeHelper(node *TreeNode, sb *strings.Builder) {
 }
 
 // Deserializes your encoded data to tree.
-func (this *Codec) deserialize(data string) *TreeNode {
+func (this *Codec449) deserialize(data string) *TreeNode {
 	if len(data) == 0 {
 		return nil
 	}
@@ -55,7 +55,7 @@ func (this *Codec) deserialize(data string) *TreeNode {
 	return this.deserializeHelper(s, &p, math.MinInt32, math.MaxInt32)
 }
 
-func (this *Codec) deserializeHelper(s []string, p *int, lowerBound, upperBound int) *TreeNode {
+func (this *Codec449) deserializeHelper(s []string, p *int, lowerBound, upperBound int) *TreeNode {
 	if *p >= len(s) {
 		return nil
 	}

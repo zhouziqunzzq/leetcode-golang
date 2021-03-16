@@ -4,7 +4,7 @@ package mycode
 // i: considering day 1...i
 // k: with k transactions
 // compact form
-func maxProfit(k int, prices []int) int {
+func maxProfit188(k int, prices []int) int {
 	if len(prices) == 0 {
 		return 0
 	}

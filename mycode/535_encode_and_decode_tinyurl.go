@@ -8,7 +8,7 @@ type Codec struct {
 	codeBucket []rune
 }
 
-func Constructor() Codec {
+func Constructor535() Codec {
 	k := 0
 	buf := make([]rune, 26*2+10)
 	for i := 0; i < 26; i++ {

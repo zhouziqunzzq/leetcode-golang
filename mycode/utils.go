@@ -69,3 +69,20 @@ func absInt(x int) int {
 	}
 	return -x
 }
+
+// Do a binary-search in a[beg:end] and return found index.
+// Note that the returned index could be idx where a[idx] == target (when target is in a),
+// or it could be idx where a[idx-1] < target and a[idx] > target (when target is not in a).
+func intSlicesBinarySearch(a []int, beg, end, target int) int {
+	l, r := beg, end
+	m := 0
+	for l < r {
+		m = l + (r-l)/2
+		if a[m] < target {
+			l = m + 1
+		} else {
+			r = m
+		}
+	}
+	return l
+}

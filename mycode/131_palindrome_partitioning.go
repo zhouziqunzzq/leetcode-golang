@@ -19,7 +19,7 @@ func partitionHelper(s string, l int, buf *[]string, rst *[][]string) {
 
 	// dfs
 	for r := l; r < len(s); r++ {
-		if isPalindrome(s[l : r+1]) {
+		if isPalindrome131(s[l : r+1]) {
 			*buf = append(*buf, s[l:r+1])
 			partitionHelper(s, r+1, buf, rst)
 			*buf = (*buf)[:len(*buf)-1]
@@ -28,7 +28,7 @@ func partitionHelper(s string, l int, buf *[]string, rst *[][]string) {
 }
 
 // can be further optimized with DP to omit overlapping palindrome checks
-func isPalindrome(s string) bool {
+func isPalindrome131(s string) bool {
 	l, r := 0, len(s)-1
 	for l <= r {
 		if s[l] != s[r] {

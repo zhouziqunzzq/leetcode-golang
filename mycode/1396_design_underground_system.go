@@ -15,7 +15,7 @@ type UndergroundSystem struct {
 	Statics map[string]map[string]*UndergroundSystemStatics
 }
 
-func Constructor() UndergroundSystem {
+func Constructor1396() UndergroundSystem {
 	return UndergroundSystem{
 		Entries: make(map[int]*UndergroundSystemEntryRecord),
 		Statics: make(map[string]map[string]*UndergroundSystemStatics),

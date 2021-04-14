@@ -8,7 +8,7 @@ type MyCircularQueue struct {
 	rp       int // rear pointer
 }
 
-func Constructor(k int) MyCircularQueue {
+func Constructor622(k int) MyCircularQueue {
 	return MyCircularQueue{
 		elem:     make([]int, k),
 		size:     0,

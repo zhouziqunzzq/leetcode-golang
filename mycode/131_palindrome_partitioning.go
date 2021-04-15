@@ -1,6 +1,6 @@
 package mycode
 
-func partition(s string) [][]string {
+func partition131(s string) [][]string {
 	buf := make([]string, 0)
 	rst := make([][]string, 0)
 	partitionHelper(s, 0, &buf, &rst)

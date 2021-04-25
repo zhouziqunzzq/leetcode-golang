@@ -1,7 +1,7 @@
 package mycode
 
 // 1 2 3 4 5 6 7
-func rotate(nums []int, k int) {
+func rotate189(nums []int, k int) {
 	n := len(nums)
 	k %= n
 	if k == 0 {

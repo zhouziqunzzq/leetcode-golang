@@ -39,7 +39,7 @@ type NestedIterator struct {
 	pStack []int
 }
 
-func Constructor(nestedList []*NestedInteger) *NestedIterator {
+func Constructor341(nestedList []*NestedInteger) *NestedIterator {
 	t := &NestedIterator{make([][]*NestedInteger, 1), make([]int, 1)}
 	t.lStack[0] = nestedList
 	t.pStack[0] = -1

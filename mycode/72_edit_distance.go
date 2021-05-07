@@ -1,6 +1,6 @@
 package mycode
 
-func minDistance(word1 string, word2 string) int {
+func minDistance72(word1 string, word2 string) int {
 	opt := make([][]int, len(word1)+1)
 	for i, _ := range opt {
 		opt[i] = make([]int, len(word2)+1)

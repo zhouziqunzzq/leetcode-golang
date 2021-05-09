@@ -86,3 +86,16 @@ func intSlicesBinarySearch(a []int, beg, end, target int) int {
 	}
 	return l
 }
+
+func reverseInt(x int) int {
+	ans := 0
+	for x > 0 {
+		ans = 10*ans + x%10
+		x /= 10
+	}
+	return ans
+}
+
+func isPalindromeInt(x int) bool {
+	return x == reverseInt(x)
+}

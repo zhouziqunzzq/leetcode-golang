@@ -15,7 +15,7 @@ type WordFilter struct {
 	trie *TrieNode745
 }
 
-func Constructor(words []string) WordFilter {
+func Constructor745(words []string) WordFilter {
 	wf := WordFilter{&TrieNode745{}}
 	trie := wf.trie
 

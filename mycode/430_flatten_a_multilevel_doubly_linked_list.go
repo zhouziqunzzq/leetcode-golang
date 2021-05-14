@@ -17,7 +17,7 @@ type Node430 struct {
 	Child *Node430
 }
 
-func flatten(root *Node430) *Node430 {
+func flatten430(root *Node430) *Node430 {
 	if root != nil {
 		flattenSolveHelper(root)
 	}

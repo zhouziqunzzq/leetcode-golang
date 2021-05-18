@@ -1,7 +1,7 @@
 package mycode
 
 // Approach 3: Floyd's Tortoise and Hare (Cycle Detection)
-func findDuplicate(nums []int) int {
+func findDuplicate287(nums []int) int {
 	slow, fast := nums[0], nums[0]
 
 	// phase one

@@ -56,6 +56,12 @@ func reverseSlice(s interface{}) {
 	}
 }
 
+func fillIntSlice(s []int, v int) {
+	for i := range s {
+		s[i] = v
+	}
+}
+
 func gcd(a, b int) int {
 	if b == 0 {
 		return a

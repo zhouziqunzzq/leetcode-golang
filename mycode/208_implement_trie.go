@@ -17,8 +17,8 @@ func TrieConstructor() Trie {
 }
 
 /** Inserts a word into the trie. */
-func (this *Trie) Insert(word string) {
-	p := this.root
+func (t *Trie) Insert(word string) {
+	p := t.root
 	wordArr := []rune(word)
 	var i int
 
@@ -38,8 +38,8 @@ func (this *Trie) Insert(word string) {
 }
 
 /** Returns if the word is in the trie. */
-func (this *Trie) Search(word string) bool {
-	p := this.root
+func (t *Trie) Search(word string) bool {
+	p := t.root
 	wordArr := []rune(word)
 
 	for i := 0; i < len(wordArr); i++ {
@@ -53,8 +53,8 @@ func (this *Trie) Search(word string) bool {
 }
 
 /** Returns if there is any word in the trie that starts with the given prefix. */
-func (this *Trie) StartsWith(prefix string) bool {
-	p := this.root
+func (t *Trie) StartsWith(prefix string) bool {
+	p := t.root
 	wordArr := []rune(prefix)
 
 	for i := 0; i < len(wordArr); i++ {
